@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_back_change_language"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_horizontal"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/header"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_background"
+                android:textSize="18dp"
+                android:hint="Nhập vào số điện thoại"
+                />
+            <Button
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/header"
+                android:id="@+id/sendotp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="@drawable/edittext_background"
+                android:inputType="number"
+                android:textSize="18dp"
+                android:hint="Mã otp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp">
+            <EditText
+                android:id="@+id/cccd"
+                android:background="@drawable/edittext_background"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="18dp"
+                android:hint="Nhập vào cccd"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="Chấp nhận"/>
+
+            <Button
+                android:id="@+id/decline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Từ chối"
+                android:layout_marginLeft="30dp"
+                android:layout_toEndOf="@+id/accept"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
